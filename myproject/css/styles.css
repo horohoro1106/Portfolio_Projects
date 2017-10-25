@@ -1,0 +1,296 @@
+/*started project with vanilla css-styling, at the end i tried to do BEM styling
+but thought to keep vanilla css combinations, in future will try to use just BEM*/
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+body {
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+  font-family: 'Myriad Pro', Arial, sans-serif;
+  background-color: #ffffff;
+}
+body * {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+img {
+  max-width: 100%;
+  width: auto;
+}
+.banner {
+  width:100%;
+  position: absolute;
+  top:0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+.wrapper {
+  width: 1024px;
+  margin: 0 auto;
+  text-align: left;
+}
+header .wrapper{
+  position: relative;
+}
+.logo{
+  float: left;
+  margin-top: 15px;
+  margin-left: 75px;
+}
+header {
+  height: 89px;
+  width: 100%;
+  background-color: #ffffff;
+  opacity: 0.902;
+  position: relative;
+  top: 0;
+  text-align:center;
+  margin-bottom: 325px;
+}
+header nav {
+  float: right;
+  margin-top: 18px;
+}
+header nav ul li {
+  display: inline-block;
+  list-style: none;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1.7rem;
+  margin-right: 30px;
+}
+header nav ul li a{
+  text-decoration: none;
+  color: #000000;
+}
+header button {
+  margin: 25px 48px 25px 40px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1.7rem;
+  background-color: #de6d6e;
+  padding: 3px 14px 2px 13px;
+  border-radius: 3px;
+  color: #ffffff;
+  float: right;
+}
+.modal-login{
+  display: none;
+  background-color: #c3d2e0;
+  position: fixed;
+  font-size: 1.4rem;
+  text-align:left;
+  left: 40%;
+  top: 15%;
+  padding: 15px;
+  width: 20%;
+  text-align: center;
+}
+.modal-p {
+  font-weight:bold;
+}
+.modal-password, .modal-user {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+}
+.modal-close {
+  margin: 5px 15px 5px 0;
+}
+.modal-submit {
+  margin: 5px 0px 5px 0;
+  font-size: 1.7rem;
+  background-color: #009933;
+  width: 89%;
+  border: none;
+}
+.modal-check {
+  font-size:1.7rem;
+  text-align: left;
+  margin-left: 7px;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.5;
+}
+
+
+header button img{
+  margin: 0 5px 0 0;
+}
+h1 {
+  font-family: 'Alte Haas Grotesk', Arial, sans-serif;
+  font-size: 6.899rem;
+  color: #ffffff;
+  text-shadow: 0px 0px 13px rgba(0, 0, 0, 0.22);
+}
+h1 + p {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 0px 0px 13px rgba(0, 0, 0, 0.22);
+  position: relative;
+  bottom: 40px;
+}
+main{
+  width: 100%;
+  text-align: center;
+  background-color: #ffffff;
+  margin-bottom: 55px;
+}
+h2{
+  text-align: center;
+  font-size: 3.5rem;
+  color: #404040;
+  padding-top: 50px;
+}
+h2 + p {
+  font-size: 1.7rem;
+  color: #636363;
+  text-align: center;
+}
+section {
+  text-align: center;
+}
+.tickets {
+  border-radius: 50%;
+  background-color: #4eb9f4;
+  width: 179px;
+  height: 179px;
+  display:inline-block;
+  margin-right: 65px;
+  position: relative;
+  bottom: 47px;
+}
+.tickets img {
+  position: relative;
+  top: 30px;
+}
+.tickets h6 {
+  position: relative;
+  top: 6px;
+  font-size: 1.7rem;
+  color: #ffffff;
+}
+.camera {
+  background-color: #6fc125;
+  display:inline-block;
+  border-radius: 50%;
+  width: 179px;
+  height: 179px;
+  margin-right: 65px;
+  position: relative;
+  bottom: 56px;
+}
+.camera img {
+  position: relative;
+  top: 43px;
+
+}
+.camera h6 {
+  position: relative;
+  top: 17px;
+  font-size: 1.7rem;
+  color: #ffffff;
+}
+.beer {
+  background-color: #ff5649;
+  display:inline-block;
+  border-radius: 50%;
+  width: 179px;
+  height: 179px;
+  margin-right: 65px;
+  position: relative;
+  top: 54px;
+}
+.beer img {
+  position: relative;
+  top: 37px;
+}
+.beer p {
+  text-align: center;
+  font-size: 1.2rem;
+  z-index: 2;
+  position: relative;
+  bottom: 55px;
+}
+.beer h6 {
+  position: relative;
+  bottom: 92px;
+  right: 4px;
+  font-size: 1.7rem;
+  color: #ffffff;
+  opacity: 0.259;
+}
+.devices {
+  background-color: #e48f23;
+  display:inline-block;
+  border-radius: 50%;
+  width: 179px;
+  height: 179px;
+  margin-right: 65px;
+  position: relative;
+  bottom: 45px;
+}
+.devices img {
+    position: relative;
+    top: 38px;
+}
+.devices h6 {
+  position: relative;
+  top: 10px;
+  font-size: 1.7rem;
+  color: #ffffff;
+}
+article {
+  padding: 5px 5px 5px 26px;
+  height:150px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+article img {
+  float: left;
+  margin-right: 20px;
+}
+article h3{
+  font-size: 2.7rem;
+  color: #404040;
+  margin: 5px;
+}
+article p{
+  font-size: 1.5rem;
+  color: #8b8b8b;
+}
+footer {
+  width: 100%;
+  background-image: url(../img/footer.jpg) ;
+  padding: 20px;
+  color: #8b8b8b;
+  font-size: 1.5rem;
+}
+.footer-nav, .links ul li {
+  display: inline-block;
+  list-style: none;
+}
+.footer-nav span {
+  font-size: 2.1rem;
+  color: #aeaeae;
+  line-height: 30px;
+}
+.footer-nav  li{
+  margin-bottom: 10px;
+}
+.links {
+  float: right;
+}
+.links p{
+  padding-left: 62px;
+}
+.links ul li {
+  margin-left: 20px;
+}
